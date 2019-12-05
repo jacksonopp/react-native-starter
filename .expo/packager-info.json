@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 96347,
-  "expoServerNgrokUrl": "https://eg-arc.anonymous.react-native-starter.exp.direct",
-  "packagerNgrokUrl": "https://packager.eg-arc.anonymous.react-native-starter.exp.direct",
-  "ngrokPid": 96377
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }

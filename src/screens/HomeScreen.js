@@ -37,6 +37,10 @@ const HomeScreen = ({ navigation }) => {
         title="Go to Box Model Demo"
         onPress={() => { navigation.navigate('BoxModel') }}
       />
+      <Button
+        title="Go to Align Demo"
+        onPress={() => { navigation.navigate('Align') }}
+      />
     </View>
   );
 };

@@ -29,25 +29,25 @@ const reducer = (state, action) => {
 
 const SquareScreen = () => {
 
-  const [state, runMyReducer] = useReducer(reducer, { red: 0, green: 0, blue: 0 })
+  const [state, dispatch] = useReducer(reducer, { red: 0, green: 0, blue: 0 })
   const { red, green, blue } = state
 
   return (
     <View>
       <Text>Square Screen</Text>
       <ColorCounter
-        onIncrease={() => { runMyReducer({ type: 'change_red', payload: COLOR_INCREMENT }) }}
-        onDecrease={() => { runMyReducer({ type: 'change_red', payload: -1 * COLOR_INCREMENT }) }}
+        onIncrease={() => { dispatch({ type: 'change_red', payload: COLOR_INCREMENT }) }}
+        onDecrease={() => { dispatch({ type: 'change_red', payload: -1 * COLOR_INCREMENT }) }}
         color="Red"
       />
       <ColorCounter
-        onIncrease={() => { runMyReducer({ type: 'change_green', payload: COLOR_INCREMENT }) }}
-        onDecrease={() => { runMyReducer({ type: 'change_green', payload: -1 * COLOR_INCREMENT }) }}
+        onIncrease={() => { dispatch({ type: 'change_green', payload: COLOR_INCREMENT }) }}
+        onDecrease={() => { dispatch({ type: 'change_green', payload: -1 * COLOR_INCREMENT }) }}
         color="Green"
       />
       <ColorCounter
-        onIncrease={() => { runMyReducer({ type: 'change_blue', payload: COLOR_INCREMENT }) }}
-        onDecrease={() => { runMyReducer({ type: 'change_blue', payload: -1 * COLOR_INCREMENT }) }}
+        onIncrease={() => { dispatch({ type: 'change_blue', payload: COLOR_INCREMENT }) }}
+        onDecrease={() => { dispatch({ type: 'change_blue', payload: -1 * COLOR_INCREMENT }) }}
         color="Blue"
       />
       <View
